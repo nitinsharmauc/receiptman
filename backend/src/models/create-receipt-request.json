@@ -4,6 +4,7 @@
     "type": "object",
     "properties": {
         "description": {
+            "minLength": 1,
             "type": "string"
         }
     },

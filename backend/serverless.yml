@@ -8,6 +8,11 @@ plugins:
   - serverless-reqvalidator-plugin
 
 provider:
+  
+  tracing:
+    lambda: true
+    apiGateway: true
+
   name: aws
   runtime: nodejs12.x
 

@@ -122,7 +122,7 @@ export class ReceiptAccess {
 function createDynamoDBClient() {
   if (process.env.IS_OFFLINE) {
     logger.info('Creating a local DynamoDB instance')
-    return new AWS.DynamoDB.DocumentClient({
+    return new XAWS.DynamoDB.DocumentClient({
       region: 'localhost',
       endpoint: 'http://localhost:8000'
     })
